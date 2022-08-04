@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- BuildOutputsDir like '<full path to repo dir>/artifacts/Debug/MyProject'-->
+    <BuildOutputsDir>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', 'artifacts', '$(Configuration)', '$(MSBuildProjectName)'))</BuildOutputsDir>
+  </PropertyGroup>
+</Project>
